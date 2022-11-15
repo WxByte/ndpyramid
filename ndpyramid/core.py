@@ -125,6 +125,7 @@ def pyramid_reproject(
                 'EPSG:3857',
                 resampling=Resampling[resampling_dict[var]],
                 shape=(dim, dim),
+                nodata=9.969209968386869e36,
                 transform=dst_transform,
             )
 
